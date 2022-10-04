@@ -1,3 +1,5 @@
+# Código que retorna quantos algarismos significativos existem em determinado número.
+
 def main():
 
     N = input()
