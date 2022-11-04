@@ -2,12 +2,12 @@ import time
 
 
 def main():
-    A = [1]
+    A = [1,2,3,4,5]
 
     ini = time.time()
     Classificador(A)
     fim = time.time()
-    with open('1elementos.txt', 'a') as arquivo:
+    with open('5elementos.txt', 'a') as arquivo:
         arquivo.write(str(' Tempo: '))
         arquivo.write(str(fim - ini))
 
@@ -61,7 +61,7 @@ def Classifica(rel, A):
 
 def Classificador(A):
     for rel in PartesDe(ProdCart(A, A)):
-        with open('1elementos.txt', 'a') as arquivo:
+        with open('5elementos.txt', 'a') as arquivo:
             arquivo.write(str(Classifica(rel, A)) + '\n')
 
 
